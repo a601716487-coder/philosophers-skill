@@ -117,8 +117,7 @@ python3 scripts/council.py --task "Should we ship dark patterns?" --workflow cri
 ├── examples/                # 完整跑通示例
 ├── scripts/
 │   ├── council.py           # 提示词生成器（stdlib only）
-│   └── validate.py          # 结构校验（CI 使用）
-└── .github/workflows/       # 自动校验
+│   └── validate.py          # 结构校验
 ```
 
 ## 设计原则
@@ -144,7 +143,7 @@ python3 scripts/council.py --task "Should we ship dark patterns?" --workflow cri
 
 **会被误用吗？** 会。每个透镜文件都写了“边界与误用”，纪律也要求不伪造引文、不把哲学家当权威。
 
-**和提示词库有什么区别？** 提示词库给模板；这里给的是“问题意识 + 可操作步骤 + 质量门”，并有校验脚本和 CI 保证结构一致。
+**和提示词库有什么区别？** 提示词库给模板；这里给的是“问题意识 + 可操作步骤 + 质量门”，并有校验脚本保证结构一致。
 
 ## 贡献
 
